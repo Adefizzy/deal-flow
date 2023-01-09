@@ -2,6 +2,7 @@ import { extendTheme } from "@chakra-ui/react";
 import type { StyleFunctionProps } from '@chakra-ui/styled-system';
 import { LinkStyle as Link } from './components/Link';
 import { InputStyle as Input } from './components/Input';
+import { TextStyle as Text } from './components/Text';
 
 
 const breakpoints = {
@@ -28,7 +29,8 @@ const theme = extendTheme({
     },
     components: {
         Link,
-        Input
+        Input,
+        Text
     },
 
     textStyles: {
@@ -42,7 +44,7 @@ const theme = extendTheme({
         global: (props: StyleFunctionProps) => ({
             "html, body": {
                 fontSize: ["sm", "md"],
-                color: props.theme.colors.gray[600],
+                color: 'black',
                 lineHeight: "tall",
                 fontFamily: `'Inter', sans-serif`,
                 backgroundColor: 'gray2'
