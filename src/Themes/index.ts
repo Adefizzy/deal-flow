@@ -47,7 +47,8 @@ const theme = extendTheme({
                 color: 'black',
                 lineHeight: "tall",
                 fontFamily: `'Inter', sans-serif`,
-                backgroundColor: 'gray2'
+                backgroundColor: 'gray2',
+                boxSizing: 'border-box'
             },
 
         })

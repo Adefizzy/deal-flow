@@ -1,8 +1,12 @@
-import { Box, StyleProps } from '@chakra-ui/react';
+import { Box, StyleProps, Center } from '@chakra-ui/react';
 
 
-export const SmallCircle = (props:  StyleProps) => {
+const SmallCircle = (props:  StyleProps & {isRing?: boolean} ) => {
     return (
-        <Box opacity='0.5' borderRadius='full' boxSize={{base: '4px', lg: '0.3vw'}} {...props}/>
+        <Center borderRadius='full' boxSize={{base: '4px', lg: '0.6vw'}} {...props}>
+            {props.isRing && <Box bgColor='white' borderRadius='full' boxSize={{base: '2px', lg: '0.2vw'}}  />}
+        </Center>
     );
 };
+
+export default SmallCircle;

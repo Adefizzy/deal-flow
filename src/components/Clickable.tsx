@@ -1,12 +1,8 @@
 import { FormEvent } from 'react';
 import { LinkBox, LinkOverlay } from '@chakra-ui/react';
 
-type Props = {
-  onClick?: () => void;
-  children: React.ReactNode;
-  height?: string
-};
-const Clickable = (props: Props) => {
+
+const Clickable = (props: IClickable) => {
   const handleClick = (e: FormEvent) => {
     e.preventDefault();
     if(props.onClick){

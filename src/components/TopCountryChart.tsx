@@ -1,34 +1,6 @@
-import {
-  ChakraProvider,
-  Grid,
-  GridItem,
-  Box
-} from '@chakra-ui/react';
-import { Line, LineChart, Tooltip, ResponsiveContainer } from 'recharts';
-import { NavBar } from './components/NavBar';
+import { ResponsiveContainer, LineChart, Tooltip, Line } from 'recharts';
 
-import theme from './Themes/index';
-import Earnings from './views/Earnings';
-
-
-export const App = () => {
-  
-
-  return (
-    <ChakraProvider theme={theme}>
-      <Grid templateRows='1fr' templateColumns='1fr'>
-        <GridItem>
-          <NavBar />
-          <Box p={5}>
-            <Earnings/>
-          </Box>
-        </GridItem>
-      </Grid>
-    </ChakraProvider>
-  );
-};
-
-const TopCountryChart = () => {
+const TopCountryChart = (props: { stroke: string }) => {
   const data = [
     {
       name: 'Page A',
@@ -70,8 +42,10 @@ const TopCountryChart = () => {
     <ResponsiveContainer height='100%' width='100%'>
       <LineChart width={730} height={250} data={data}>
         <Tooltip />
-        <Line dot={false} type='monotone' dataKey='uv' stroke='#FBBA6D' />
+        <Line dot={false} type='monotone' dataKey='uv' stroke={props.stroke} />
       </LineChart>
     </ResponsiveContainer>
   );
 };
+
+export default TopCountryChart;

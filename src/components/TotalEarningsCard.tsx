@@ -1,4 +1,3 @@
-// @flow 
 import { Flex, Icon, chakra , Text} from '@chakra-ui/react';
 import { GoTriangleUp } from 'react-icons/go';
 import { Card } from './Card';
@@ -6,7 +5,7 @@ import { CircleBg } from './CircleBg';
 
 const TotalEarningsCard = () => {
     return (
-        <UniqueCard bgColor='purple' color='white' pt={0}>
+        <UniqueCard bgColor='purple' color='white' pt={0} height='38%'>
         <Flex justifyContent='center' alignItems='center' flexDirection='column'>
           <CircleBg/>
           <CircleBg/>
