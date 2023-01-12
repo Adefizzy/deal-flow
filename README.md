@@ -31,3 +31,6 @@ PS: npm was used for this project, but you can use your prefernece.
 ### Completed Pages
 > Transactions
 > Earnings
+
+App can be preview with this link
+https://63c06b79a5fe1f6724151f65--incomparable-malasada-5c6906.netlify.app/

@@ -5,8 +5,8 @@ import { Layout } from './components/Layout';
 import { paths } from './utils/paths';
 
 import theme from './Themes/index';
-import Earnings from './views/Earnings';
-import Transactions from './views/Transactions';
+import Earnings from './views/Earnings/loader';
+import Transactions from './views/Transactions/loadable';
 
 export const App = () => {
   return (
