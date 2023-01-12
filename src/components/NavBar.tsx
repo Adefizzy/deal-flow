@@ -1,31 +1,10 @@
 import { Flex, Input, Divider, Box } from '@chakra-ui/react';
-import {
-  ArrowUp,
-  Bell,
-  DollaCoin,
-  DoubleArrow,
-  Document,
-  Network,
-  Settings,
-  User,
-  UserGroup,
-  World,
-} from './icons';
+import { Bell, Settings } from './icons';
+import { navObj } from '../utils/paths';
 
 import SingleNav from './SingleNav';
 
-const navObj = [
-  { path: '/', icon: <World /> },
-  { path: '/trends', icon: <ArrowUp /> },
-  { path: '/customer', icon: <UserGroup /> },
-  { path: '/document', icon: <Document /> },
-  { path: '/users', icon: <User /> },
-  { path: '/user-behaviour-flow', icon: <Network /> },
-  { path: '/transactions', icon: <DoubleArrow /> },
-  { path: '/earnings', icon: <DollaCoin /> },
-];
-
-export const NavBar = () => {
+const NavBar = () => {
   const navList = navObj.map((nav) => (
     <SingleNav path={nav.path} icon={nav.icon} key={nav.path} />
   ));
@@ -65,3 +44,5 @@ export const NavBar = () => {
     </Flex>
   );
 };
+
+export default NavBar;
