@@ -6,7 +6,7 @@ import SingleNav from './SingleNav';
 
 const NavBar = () => {
   const navList = navObj.map((nav) => (
-    <SingleNav path={nav.path} icon={nav.icon} key={nav.path} />
+    <SingleNav {...nav} key={nav.path} />
   ));
 
   return (

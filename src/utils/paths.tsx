@@ -23,14 +23,14 @@ export const paths = {
 
 
 export const navObj = [
-    { path: paths.home, icon: <World /> },
-    { path: paths.trends, icon: <ArrowUp /> },
-    { path: paths.customers, icon: <UserGroup /> },
-    { path: paths.document, icon: <Document /> },
-    { path: paths.users, icon: <User /> },
-    { path: paths.userBehaviour, icon: <Network /> },
-    { path: paths.transactions, icon: <DoubleArrow /> },
-    { path: paths.earnings, icon: <DollaCoin /> },
+    { path: paths.home, icon: <World /> , name: 'Generic Statistics'},
+    { path: paths.trends, icon: <ArrowUp /> , name: 'Trends'},
+    { path: paths.customers, icon: <UserGroup />,  name: 'Customers' },
+    { path: paths.document, icon: <Document />, name: 'Document' },
+    { path: paths.users, icon: <User />,  name: 'Users'  },
+    { path: paths.userBehaviour, icon: <Network /> ,  name: 'User Behaviour Flow' },
+    { path: paths.transactions, icon: <DoubleArrow />,  name: 'Transactions'  },
+    { path: paths.earnings, icon: <DollaCoin />,  name: 'Earnings'  },
   ];
 
 

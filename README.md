@@ -28,3 +28,6 @@ PS: npm was used for this project, but you can use your prefernece.
 ### `npm start` to start the application
 ### `npm run build` to build the application
 
+### Completed Pages
+> Transactions
+> Earnings
