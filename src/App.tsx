@@ -1,9 +1,10 @@
 import { ChakraProvider, Box } from '@chakra-ui/react';
 import { Routes, Route } from 'react-router-dom';
+
 import { Layout } from './components/Layout';
+import { paths } from './utils/paths';
 
 import theme from './Themes/index';
-import { paths } from './utils/paths';
 import Earnings from './views/Earnings';
 import Transactions from './views/Transactions';
 
