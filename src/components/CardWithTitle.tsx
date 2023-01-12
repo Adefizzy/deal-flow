@@ -1,16 +1,15 @@
 import { Card } from './Card';
-import { Text, Flex } from '@chakra-ui/react';
+import { StyleConfig, Text,  } from '@chakra-ui/react';
+import FaintTitle from './FaintTitle';
 
 
-const CardWithTitle = (props: ICardWithTitle) => {
+const CardWithTitle = (props: ICardWithTitle & StyleConfig) => {
   return (
     <Card mt={props.noMarging? 0 : 10} height={props?.height}>
-      <Text variant='normalBold'>{props.title}</Text>
+      <Text variant='normalBold'>{props?.title}</Text>
+      {props.firstChildren}
       {props.leftTitle && props.rightTitle && (
-        <Flex mt={4} justifyContent='space-between'>
-          <Text variant='smallFaded'>{props.leftTitle}</Text>
-          <Text variant='smallFaded'>{props.rightTitle}</Text>
-        </Flex>
+        <FaintTitle {...props}/>
       )}
       {props.children}
     </Card>
@@ -18,3 +17,6 @@ const CardWithTitle = (props: ICardWithTitle) => {
 };
 
 export default CardWithTitle;
+
+
+

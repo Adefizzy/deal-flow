@@ -13,7 +13,8 @@ type ISingleTopCountry = {
 
 type ICardWithTitle = {
     children: React.ReactNode;
-    title: string;
+    firstChildren?: React.ReactNode;
+    title?: string;
     leftTitle?: string;
     rightTitle?: string;
     noMarging?: boolean;
@@ -36,4 +37,12 @@ type IEarningType = {
     index: number,
     value: string,
     progressValue: number
+}
+
+type ISingleItemAndAmount = {
+    showFooter?: boolean,
+    title: string,
+    value: number,
+    isGain?: boolean
+    showIcon?: boolean
 }

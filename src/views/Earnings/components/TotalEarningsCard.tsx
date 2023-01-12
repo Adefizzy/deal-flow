@@ -1,7 +1,7 @@
 import { Flex, Icon, chakra , Text} from '@chakra-ui/react';
 import { GoTriangleUp } from 'react-icons/go';
-import { Card } from './Card';
-import { CircleBg } from './CircleBg';
+import { Card } from '../../../components/Card';
+import { CircleBg } from '../../../components/CircleBg';
 
 const TotalEarningsCard = () => {
     return (

@@ -9,6 +9,7 @@ import { NavBar } from './components/NavBar';
 
 import theme from './Themes/index';
 import Earnings from './views/Earnings';
+import Transactions from './views/Transactions';
 
 
 export const App = () => {
@@ -20,7 +21,7 @@ export const App = () => {
         <GridItem>
           <NavBar />
           <Box p={5}>
-            <Earnings/>
+            <Transactions/>
           </Box>
         </GridItem>
       </Grid>

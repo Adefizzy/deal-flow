@@ -40,6 +40,10 @@ export const TextStyle = {
     largeBold: {
         fontWeight: '600',
         fontSize: {base: '18px', lg: '1.8vw'},
+    },
+    caption: {
+        color:'gray3',
+        fontSize: {base: '7px', lg: '0.8vw'},
     }
   },
   defaultProps: {},

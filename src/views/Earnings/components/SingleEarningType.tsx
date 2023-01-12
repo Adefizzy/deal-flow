@@ -1,9 +1,9 @@
 // @flow
 import { Flex, Center, Text } from '@chakra-ui/react';
 
-import getColor from '../utils/getColor';
-import SmallCircle from './SmallCircle';
-import ProgressBar from './ProgressBar';
+import getColor from '../../../utils/getColor';
+import SmallCircle from '../../../components/SmallCircle';
+import ProgressBar from '../../../components/ProgressBar';
 
 
 

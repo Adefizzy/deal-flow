@@ -1,8 +1,7 @@
-// @flow
 import { Flex, Center, Icon, Text } from '@chakra-ui/react';
 import { GoTriangleUp, GoTriangleDown } from 'react-icons/go';
-import getColor from '../utils/getColor';
-import SmallCircle from './SmallCircle';
+import getColor from '../../../utils/getColor';
+import SmallCircle from '../../../components/SmallCircle';
 import TopCountryChart from './TopCountryChart';
 
 
