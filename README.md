@@ -31,6 +31,10 @@ PS: npm was used for this project, but you can use your prefernece.
 ### Completed Pages
 > Transactions
 > Earnings
+> Customers
+
+### NB:
+I have only implemented the UI, no API has been integrated yet. 
 
 App can be preview with this link
-https://63c06b79a5fe1f6724151f65--incomparable-malasada-5c6906.netlify.app/
+https://63c466a101544e1558193b9b--incomparable-malasada-5c6906.netlify.app
