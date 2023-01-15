@@ -4,6 +4,7 @@ const FaintTitle = (props: Partial<ICardWithTitle>) => {
   return (
     <Flex mt={4} justifyContent='space-between'>
       <Text variant='smallFaded'>{props.leftTitle}</Text>
+      <Text variant='smallFaded'>{props?.middleTitle}</Text>
       <Text variant='smallFaded'>{props.rightTitle}</Text>
     </Flex>
   );

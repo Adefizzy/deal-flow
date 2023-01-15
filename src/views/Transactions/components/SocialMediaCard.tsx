@@ -3,7 +3,7 @@ import { brandData } from '../tempData';
 
 import CardWithTitle from '../../../components/CardWithTitle';
 import SingleItemAndAmount from './SingleItemAndAmount';
-import SocialMediaChart from './SocialMediaChart';
+import BarChartWithoutAxis from '../../../components/BarChartWithoutAxis';
 
 const SocialMediaCard = () => {
   const socialMediaDataList = brandData.map((data) => (
@@ -15,7 +15,7 @@ const SocialMediaCard = () => {
       title='Social Media'
       firstChildren={
         <Box width='19vw'>
-          <SocialMediaChart />
+          <BarChartWithoutAxis />
         </Box>
       }
     >

@@ -9,6 +9,7 @@ type ISingleTopCountry = {
     value: string;
     index: number;
     gain: boolean;
+    hideChart?: boolean
 };
 
 type ICardWithTitle = {
@@ -19,6 +20,7 @@ type ICardWithTitle = {
     rightTitle?: string;
     noMarging?: boolean;
     height?: string
+    middleTitle?: string
 };
 
 type IClickable = {

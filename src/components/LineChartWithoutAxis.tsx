@@ -1,7 +1,9 @@
 import { ResponsiveContainer, LineChart, Tooltip, Line } from 'recharts';
-import { data } from '../data';
+import { data } from '../tempData';
 
-const TopCountryChart = (props: { stroke: string }) => {
+
+
+const LineChartWithoutAxis = (props: { stroke: string }) => {
  
   return (
     <ResponsiveContainer height='100%' width='100%'>
@@ -13,4 +15,4 @@ const TopCountryChart = (props: { stroke: string }) => {
   );
 };
 
-export default TopCountryChart;
+export default LineChartWithoutAxis;

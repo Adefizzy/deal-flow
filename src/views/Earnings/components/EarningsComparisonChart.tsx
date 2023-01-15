@@ -7,9 +7,12 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+
 import CustomTooltip from '../../../components/CustomTooltip';
 import colors from '../../../utils/colors';
-import { data } from '../data';
+
+import { data } from '../../../tempData';
+
 
 const EarningsComparisonChart = () => {
   

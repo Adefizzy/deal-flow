@@ -4,6 +4,8 @@ import { LinkStyle as Link } from './components/Link';
 import { InputStyle as Input } from './components/Input';
 import { TextStyle as Text } from './components/Text';
 
+import { ButtonStyle as Button } from './components/Button';
+
 
 const breakpoints = {
     sm: '320px',
@@ -30,7 +32,8 @@ const theme = extendTheme({
     components: {
         Link,
         Input,
-        Text
+        Text,
+        Button
     },
 
     textStyles: {

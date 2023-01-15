@@ -7,8 +7,10 @@ import {
     XAxis,
     YAxis,
   } from 'recharts';
-  import colors from '../../../utils/colors';
-import { data } from '../data';
+  
+import { data } from '../../../tempData';
+import colors from '../../../utils/colors';
+
   
   const SalesPredictionChart = () => {
     return (

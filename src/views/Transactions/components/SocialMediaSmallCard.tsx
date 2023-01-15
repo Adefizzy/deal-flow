@@ -1,6 +1,8 @@
 import { Box } from "@chakra-ui/react";
+
+import BarChartWithoutAxis from "../../../components/BarChartWithoutAxis";
 import ServiceCard from "./ServiceCard";
-import SocialMediaChart from "./SocialMediaChart";
+
 
 export const SocialMediaSmallCard = () => {
     return (
@@ -8,7 +10,7 @@ export const SocialMediaSmallCard = () => {
         title='Social Media'
         chart={
             <Box width='10vw' height='10vh'>
-              <SocialMediaChart />
+              <BarChartWithoutAxis />
             </Box>
         }
       />

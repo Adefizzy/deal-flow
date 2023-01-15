@@ -1,19 +1,19 @@
 import { Flex, Box, Text } from '@chakra-ui/react';
 
+import { earningTypes } from '../../tempData';
+
 import CardWithTitle from '../../components/CardWithTitle';
 import EarningsComparison from './components/EarningsComparison';
 import SalesPredictionChart from './components/SalesPredictionChart';
 import SingleEarningType from './components/SingleEarningType';
 import TotalEarningsCard from './components/TotalEarningsCard';
+import TopCountryCard from '../../components/TopCountryCard';
 
-import { topCountryStat, earningTypes } from './data';
-import { SingleTopCountry } from './components/SingleTopCountry';
+
+
+
 
 const Index = () => {
-  const topCountryList = topCountryStat.map((item, index) => (
-    <SingleTopCountry index={index} {...item} key={item.country} />
-  ));
-
   const earningTypesList = earningTypes.map((item, index) => (
     <SingleEarningType index={index} {...item} key={item.type} />
   ));
@@ -29,15 +29,7 @@ const Index = () => {
           justifyContent='space-between'
         >
           <TotalEarningsCard />
-          <CardWithTitle
-            title='Top Country'
-            rightTitle='Earnings'
-            leftTitle='Country'
-            height='58%'
-            noMarging
-          >
-            {topCountryList}
-          </CardWithTitle>
+          <TopCountryCard/>
         </Flex>
         <Box flexBasis='68%' height='100%'>
           <EarningsComparison />

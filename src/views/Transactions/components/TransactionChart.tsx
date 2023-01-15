@@ -1,9 +1,11 @@
 import { ResponsiveContainer, LineChart, Tooltip, Line, XAxis, YAxis , CartesianGrid} from 'recharts';
-import colors from '../../../utils/colors';
+
 import { transactionData } from '../tempData';
 
+import colors from '../../../utils/colors';
+
+
 const TransactionsChart = () => {
-    console.log({ transactionData })
   return (
     <ResponsiveContainer height='100%' width='100%'>
       <LineChart width={730} height={250} data={transactionData}  margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
