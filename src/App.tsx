@@ -7,6 +7,7 @@ import { paths } from './utils/paths';
 import theme from './Themes/index';
 import Earnings from './views/Earnings/loader';
 import Transactions from './views/Transactions/loadable';
+import Customers from './views/Customers'
 
 export const App = () => {
   return (
@@ -15,7 +16,7 @@ export const App = () => {
         <Route path={paths.home} element={<Layout />}>
           <Route index element={<Box>Coming soon</Box>} />
           <Route path={paths.users} element={<Box>Coming soon</Box>} />
-          <Route path={paths.customers} element={<Box>Coming soon</Box>} />
+          <Route path={paths.customers} element={<Customers/>} />
           <Route path={paths.document} element={<Box>Coming soon</Box>} />
           <Route path={paths.statements} element={<Box>Coming soon</Box>} />
           <Route path={paths.userBehaviour} element={<Box>Coming soon</Box>} />
