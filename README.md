@@ -35,6 +35,7 @@ PS: npm was used for this project, but you can use your prefernece.
 
 ### NB:
 I have only implemented the UI, no API has been integrated yet. 
+Also note that the world map on customers page was implemented with canvas
 
 App can be preview with this link
 https://63c466a101544e1558193b9b--incomparable-malasada-5c6906.netlify.app
